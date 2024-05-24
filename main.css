@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+.result {
+    margin-left: 5%;
+    flex: 1;
+}
+.field {
+    display: flex;
+    margin-bottom: 5%;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.input {
+    flex: 1;
+}
+input {
+    width: 50px;
+    margin-left: 2%;
+}
+label {
+    flex: 1;
+}
