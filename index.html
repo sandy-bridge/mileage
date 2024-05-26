@@ -9,19 +9,23 @@
         <h1>Mileage Calculator</h1>
         <div class="container">
             <div class="input">
-                <form>
-                    <div class="field">
-                        <label for="start">Start mileage:</label>
-                        <input type="number" id="start" name="start" onchange="setDistance()" value="0">
-                    </div>
-                    <div class="field">
-                        <label for="end">End mileage:</label>
-                        <input type="number" id="end" name="end" onchange="setDistance()" value="0">
-                     </div>
-                </form>
+                <div id="segments">
+                    <form class="segment">
+                        <h2>Segment 1</h2>
+                        <div class="field">
+                            <label for="start">Start mileage:</label>
+                            <input type="number" id="start-1" name="start" onchange="setDistance()" value="0">
+                        </div>
+                        <div class="field">
+                            <label for="end">End mileage:</label>
+                            <input type="number" id="end-1" name="end" onchange="setDistance()" value="0">
+                        </div>
+                    </form>
+                </div>
+                <button type="button" onclick="addSegment()">Add segment</button>
             </div>
             <div class="result">
-                <h2 id="distance"></h2>
+                <h2 id="distance">Distance: 0.0</h2>
             </divš>
         </div>
     </body>
